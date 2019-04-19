@@ -1,0 +1,105 @@
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 0.5fr;
+   grid-template-rows: 0.5fr 1fr 1fr;
+   grid-template-areas: 
+      "a . b b"
+      "c d e f"
+      "g g g f"; 
+   min-height: 100vh;
+}
+
+.menu1, .menu2, .card1, .card2, .card3, .main, .aside {
+   padding: 5px;
+}
+
+.menu1 {
+   grid-area: a;
+}
+
+.menu1 div {
+   background: pink;
+   height: 100%;
+}
+
+.menu2 {
+   grid-area: b;
+}
+
+.menu2 div {
+   background: lightyellow;
+   height: 100%;
+}
+
+.aside {
+   grid-area: f;
+}
+
+.aside section {
+   background: lightgray;
+   height: 100%;
+}
+
+.card1 {
+   grid-area: c;
+}
+
+.card2 {
+   grid-area: d;
+}
+
+.card3 {
+   grid-area: e;
+}
+
+.card1 section, .card2 section, .card3 section{
+   background: lightblue;
+   height: 100%
+}
+
+.main {
+   grid-area: g;
+}
+
+.main section {
+   background: lightblue;
+   height: 100%;
+}
+
+/* overwrites the overlapping parts */
+@media (max-width: 1024px) {
+   /* tablet layout here */
+   .container {
+      display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr .3fr 1fr 1fr 1fr;
+   grid-template-areas: 
+      "a b"
+      "f f"
+      "c d"
+      "e e"
+      "g g"; 
+   min-height: 100vh;
+   }
+}
+
+@media (max-width: 480px) {
+   /* tablet layout here */
+   .container {
+      display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr .3fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+      "a ."
+      "b b"
+      "c c"
+      "d d"
+      "e e"
+      "g g"; 
+   min-height: 100vh;
+   }
+   .aside {
+      display: none;
+   }
+}
+
