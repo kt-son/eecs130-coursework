@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,400i,700|Rubik:400,400i,700');
+
+
+/* LAYOUT */
+
+.container {
+   display: grid;
+   grid-template-columns: .2fr 1fr 1fr .2fr;
+   grid-template-rows: .2fr .05fr .1fr 1fr .1fr;
+   grid-template-areas:
+      "a a a a"
+      "b b b b"
+      ". p p ."
+      ". c c ."
+      "d d d d";
+   min-height: 100vh;
+}
+
+.container_story_list {
+  display: grid;
+  grid-template-columns: .2fr 0.67fr 0.67fr 0.67fr 0.2fr;
+  grid-template-rows: .1fr .05fr .025fr 1fr .05fr;
+  grid-template-areas:
+      "a a a a a"
+      "b b b b b"
+      "h h h h h"
+      ". c c c ."
+      "d d d d d";
+  min-heignt: 100vh;
+}
+
+.container_story_detail {
+   display: grid;
+   grid-template-columns: .2fr 1fr 1fr .2fr;
+   grid-template-rows: .2fr .05fr .05fr .05fr .1fr 1fr .1fr;
+   grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "h h h h"
+      "s s s s"
+      ". n r ."
+      ". q m ."
+      "d d d d";
+   min-height: 100vh;
+}
+
+.container_author {
+   display: grid;
+   grid-template-columns: .2fr 1fr 1fr .2fr;
+   grid-template-rows: .2fr .05fr .05fr .1fr 1fr .1fr;
+   grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "h h h h"
+      ". i r ."
+      ". q l ."
+      "d d d d";
+   min-height: 100vh;
+}
+
+/* .container_author {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .05fr .05fr .025fr .1fr .1fr 0.05fr;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "h h"
+    "i r"
+    "q l"
+    "d d";
+  min-height: 100vh;
+} */
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .05fr .1fr 1fr 1fr .1fr;
+  grid-template-areas:
+    "a a a a"
+    ". b b ."
+    ". d d ."
+    ". c c ."
+    ". c c ."
+    "p p p p";
+  min-height: 100vh;
+} */
+
+/* .header, .aside, .description, .cards, .footer{
+  padding: 5px;
+} */
+
+
+.header {
+  grid-area: a;
+}
+
+body h1{
+  grid-area: h;
+}
+
+.aside {
+  grid-area: b;
+}
+
+.mobile_aside {
+  /* display: none; */
+}
+
+.description {
+  grid-area: p;
+}
+
+.cards {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: d;
+}
+
+a {
+  text-decoration: none;
+}
+/* .card_category_1 {
+  grid-area: w;
+}
+
+.card_category_2 {
+  grid-area: x;
+}
+
+.card_category_3 {
+  grid-area: y;
+}
+
+.card_category_4 {
+  grid-area: z;
+} */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0% 5% 0% 5%;
+}
+
+.paragraph_1 {
+  grid-area: r;
+}
+
+.paragraph_2 {
+  grid-area: q;
+}
+
+.img {
+  grid-area: i;
+}
+
+.img_1 {
+  grid-area: n;
+}
+
+.img_2 {
+  grid-area: m;
+}
+
+.list {
+  grid-area: l;
+}
+
+.container_story_detail h2 {
+  grid-area: s;
+}
+
+.card_category_1, .card_category_2, .card_category_3, .card_category_4 {
+    flex: 0 1 calc(25% - 1em);
+}
+
+.card_story_1, .card_story_2, .card_story_3,
+.card_story_4, .card_story_5, .card_story_6 {
+    flex: 0 1 calc(33% - 1em);
+}
+
+
+
+
+@media (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "a"
+      "c"
+      "c"
+      "c"
+      "c"
+      "e"
+      "d";
+  }
+  /* .mobile_aside {
+    grid-area: e;
+    display: none !important;
+  } */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0% 5% 0% 5%
+  }
+  .cards article {
+    display: block;
+    align-content: center;
+  }
+  .description {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  .card_category_1, .card_category_2, .card_category_3, .card_category_4 {
+      flex: 0 1 calc(100% - 1em);
+  }
+
+  .container_story_list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "a"
+      "h"
+      "c"
+      "e"
+      "d";
+  }
+  .card_story_1, .card_story_2, .card_story_3,
+  .card_story_4, .card_story_5, .card_story_6 {
+      flex: 0 1 calc(100% - 1em);
+    }
+
+  .container_story_detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 0.1fr .8fr .8fr .5fr 1fr 0.1fr;
+    grid-template-areas:
+      "a"
+      "h"
+      "s"
+      "n"
+      "r"
+      "m"
+      "q"
+      "d"
+  }
+
+  .container_author {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr .8fr .8fr .5fr 1fr 0.1fr;
+    grid-template-areas:
+      "a"
+      "h"
+      "i"
+      "r"
+      "l"
+      "q"
+      "d"
+  }
+}
+
+/* @media (min-width: 481px) {
+  .mobile_aside {
+  display: none;
+  }    */
+
+/* GENERAL PROPERTIES */
+.cards img {
+  height: 250px;
+}
+
+body {
+  background-color: #FFF8F4;
+}
+
+header {
+  background-image: url("assets/images/stack_background_2.jpg");
+  height: 100%;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #FFF8F4;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #B24243;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #AFD6C6;
+  text-align: center;
+  /* text-shadow: 1.3px 1.3px rgba(0, 0, 0, .4) */
+}
+
+body p {
+  font-family: 'Rubik', sans-serif;
+
+}
+
+nav {
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 2 px;
+  padding 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  color: #54494B;
+}
+
+nav > a {
+  color: #E3D081;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E3D081;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* nav > ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+/* body {
+  margin: 10% 5% 2% 5%;
+} */
+
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #54494B;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 > a{
+  color: #91C7B1;
+}
+
+.cards img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* SPECIFIC TWEAKS */
+
+.img_1 {
+  display: block;
+  margin-left: 35%;
+}
+
+
+
+figure img {
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* How do I align it to be on the righter side? */
+}
+
+figcaption {
+  font-family: 'Lato', sans-sans-serif;
+  color: #54494B;
+  text-align: center;
+}
+
+.img_1, .img_2 {
+  height: 400px;
+}

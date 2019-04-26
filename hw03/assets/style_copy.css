@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,400i,700|Rubik:400,400i,700');
+@font-face
+
+}
+body {
+  /* background-color: #F1F7ED; */
+  background-color: #FFF8F4;
+}
+
+img {
+  height: 250px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E3D081;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Doesn't work :( */
+/* li a.active {
+  background-color: #54494B;
+}
+
+li a:hover:not(.active) {
+  background-color: #E3D081;
+} */
+
+footer {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 70%;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  color: #54494B;
+}
+
+ul.rounded-list {
+  list-style: none;
+  counter-reset: item;
+  margin-left: 20%;
+}
+
+ul.rounded-list > li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ul.rounded-list > li:before {
+  margin-right: 10px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f02d";
+  background: #E3D081;
+  border-radius: 100%;
+  color: #FFF8F4;
+  width: 1.3em;
+  text-align: center;
+  display: inline-block;
+}
+
+/*
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+} */
+
+
+
+/* body ul {
+  border: solid 2px skyblue;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+
+body ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;
+}
+
+body ul li:before {
+  font-family: FontAwesome;
+  content: "\f138";
+  position: absolute;
+  left : 1em;
+  color: skyblue; */
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #B24243;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #AFD6C6;
+  text-align: center;
+}
+
+nav {
+  font-family: 'Rubik', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #54494B;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav > a {
+  color: #E3D081;
+}
+
+h2 > a{
+  color: #91C7B1;
+}
+
+head {
+  /* font-family: 'Playfair Display', serif; */
+}
+
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards h2, a {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 5px;
+} */
+
+/* cards {
+  url: "#",
+  title: "Moulin Rouge in Paris",
+  description: "Immortalised in the posters of Toulouse-Lautrec and later on screen by Baz Luhrmann, the Moulin Rouge twinkles beneath a 1925 replica of its original red windmill. Yes, it’s rife with bus-tour crowds. But from the opening bars of music to the last high kick it’s a whirl of fantastical costumes, sets, choreography and Champagne. Booking advised.",
+  image_alt: "",
+  image_url: "https://cache.graphicslib.viator.com/graphicslib/thumbs674x446/5022/SITours/moulin-rouge-show-paris-in-paris-116546.jpg",
+  fixed?: true
+} */
+
+
+
+/* .card {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: cards;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 5px;
+  display: inline-block;
+} */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0% 5% 0% 5%;
+}
+
+.card_story {
+    flex: 0 1 calc(33% - 1em);
+}
+
+.card_category {
+    flex: 0 1 calc(25% - 1em);
+}
+
+nav > ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  margin: 10% 5% 2% 5%;
+}
+
+.first_letter {
+background-color: #AFD6C6;
+font-family: 'Rubik', sans-serif;
+color: #B24243;
+float: left;
+font-size: 48px;
+margin-right: 10px;
+margin-top: 7px;
+padding: 8px;
+border-radius: 0px;
+}
+
+/* img {
+  float: right;
+} */
