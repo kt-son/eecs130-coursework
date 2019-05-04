@@ -49,6 +49,6 @@ header h1 {
     grid-area: results;
 }
 
-/* #output {
-  font-size = 3em;
-} */
+#output {
+  font-size: 3em;
+}

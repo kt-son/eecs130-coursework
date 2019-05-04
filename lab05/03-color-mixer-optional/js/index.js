@@ -9,7 +9,9 @@ const blueElement = document.getElementById("blue");
 const updateColor = () => {
     console.log('Use the redElement, greenElement, and blueElement to set the background!')
     // change this so that it's not hard-coded:
-    document.querySelector('body').style.backgroundColor = 'rgb(255, 0, 0)';
+    document.querySelector('body').style.backgroundColor = rgb(#red, #green, #blue);
 }
+
+
 
 document.querySelector('button').onclick = updateColor;

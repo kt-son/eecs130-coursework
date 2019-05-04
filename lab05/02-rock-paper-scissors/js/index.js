@@ -1,11 +1,11 @@
-const choices = ["rock", "paper", "scissors"];
+const choices = ["<i class='fa fa-hand-rock-o'></i>", "paper", "scissors"];
 
-/*
-// Optional Enhancement:
+
+
 const rockIcon = "<i class='fa fa-hand-rock-o'></i>";
 const paperIcon = "<i class='fa fa-hand-paper-o'></i>";
 const scissorsIcon = "<i class='fa fa-hand-scissors-o'></i>";
-*/
+
 
 const getComputerChoice = () => {
     const index = parseInt(Math.random() * 3); // picks a number between 0 and 2.
@@ -28,7 +28,7 @@ const playGame = () => {
     // the #output element, using if / else statements here....
     if (userChoice === computerChoice) {
       document.querySelector('#output').innerHTML = 'Tied!'
-    } else if (userChoice === "rock" && computerChoicoe === "paper" || userChoice === "scissors" && computerChoice === "rock" || userChoice === "paper" && computerChoice === "scissors") {
+    } else if (userChoice === "rock" && computerChoice === "paper" || userChoice === "scissors" && computerChoice === "rock" || userChoice === "paper" && computerChoice === "scissors") {
       document.querySelector('#output').innerHTML = 'You lost!'
     } else {
       document.querySelector('#output').innerHTML = 'You won!'
