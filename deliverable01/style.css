@@ -11,5 +11,20 @@ body{
 
 svg{
   height:80vh;
+}
+
+#buddy{
   cursor:pointer;
 }
+
+body {
+  background-image: linear-gradient(-45deg, #e0ebfc, #edffe2)
+}
+
+.mouth_path {
+  fill: #e06d47
+}
+
+
+
+/* make a spoon shaped cursor! */

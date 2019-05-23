@@ -8,7 +8,6 @@
 
 .photo:hover {
   width: 300px;
-  height: 300px;
   display: inline-block;
   background-size: cover;
   background-position: center;
@@ -27,15 +26,29 @@
   padding-right: 10px; */
   list-style: none;
   opacity: 0.75;
+  vertical-align: top;
 }
 
 .card:hover {
-  width: 300px;
+  /* width: 300px;
   height: 400px;
   display: inline-block;
   background-image: linear-gradient(-60deg, #f48c41, #f9d993);
-  list-style: none;
+  list-style: none; */
   opacity: 1;
+}
+
+.card:hover p.title {
+  text-overflow: initial;
+  white-space: initial;
+}
+
+.card:hover p.album {
+  display: none;
+}
+
+.card:hover p.artist {
+  display: none;
 }
 
 #preview {
@@ -73,8 +86,8 @@ p{
   color: #fc8632;
 }
 
-p:hover{
+/* p:hover{
     text-overflow:clip;
     width:auto;
     white-space: normal;
-}
+} */
