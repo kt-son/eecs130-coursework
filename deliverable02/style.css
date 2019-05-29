@@ -1,0 +1,138 @@
+/* Body */
+.container {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr .2fr 0.2fr 0.2fr;
+  grid-template-rows: 0.1fr 0.6fr 0.2fr 0.05fr 0.3fr;
+  grid-template-areas:
+    ". .  b . ."
+    ". . . . t"
+    ". q q q ."
+    "s s s y z"
+    "c c c c c";
+}
+
+
+html, body{
+  height: 100%
+}
+
+body{
+  margin: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/spoon_1f944.png"), auto; */
+}
+
+input {
+  grid-area: y;
+}
+
+#search{
+  grid-area: z;
+}
+
+#mouth_button {
+  grid-area: t;
+}
+
+.card {
+  grid-area: c;
+}
+
+/* input{
+  grid-area: y;
+}
+
+#search{
+  grid-area: z;
+} */
+
+/* input, #search {
+  float: left;
+} */
+
+button{
+  cursor: url(spoon_blue.png), auto;
+}
+
+/* Animaiton */
+
+svg{
+  height:80vh;
+}
+
+#buddy{
+  grid-area: b;
+}
+
+body {
+  background-image: linear-gradient(-45deg, #e0ebfc, #edffe2);
+}
+
+.mouth_path {
+  fill: #e06d47;
+}
+
+.hi {
+  fill: #ff99d1;
+}
+
+/* Style */
+#banner{
+  font-family:'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: #c41200;
+  grid-area: q;
+}
+
+/* Card */
+.photo {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  list-style: none;
+  opacity: 0.75;
+}
+
+.card:hover {
+  width: 200px;
+  height: 250px;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  list-style: none;
+  opacity: 1;
+  cursor:  pointer;
+}
+
+.name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #000
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.address {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #000
+  margin-top: -50px;
+}
