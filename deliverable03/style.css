@@ -1,0 +1,176 @@
+html, body{
+  height: 100%
+}
+
+button{
+  cursor: url(spoon_blue.png), auto;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-45deg, #e0ebfc, #edffe2);
+
+  /* cursor: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/spoon_1f944.png"), auto; */
+}
+.container {
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  grid-template-rows: 77vh 3vh 20vh;
+  grid-template-areas:
+    "person person"
+    ". search"
+    "results results";
+}
+
+.person, .restaurants, .search, .left, .right {
+    width: 100%;
+    /* border: solid 1px #000; */
+}
+.person svg {
+    display: flex;
+    margin: auto;
+}
+
+.person {
+    grid-area: person;
+}
+#output {
+    grid-area: results;
+    display: grid;
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-areas:
+      "left restaurants right";
+}
+
+.left {
+    grid-area: left;
+    margin-right: -30px;
+}
+.right {
+    grid-area: right;
+    margin-left: 30px;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: row;
+    grid-area: restaurants;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #c41200;
+    justify-content: center;
+    margin: auto;
+}
+.search {
+    grid-area: search;
+}
+
+svg{
+  height:100%;
+}
+
+#buddy{
+  grid-area: b;
+}
+
+.mouth_path {
+  fill: #e06d47;
+}
+
+input {
+    width: 70%;
+}
+
+
+
+#mouth_button {
+    margin-top: -30px;
+    display: block;
+}
+
+
+.photo {
+  width: 100%;
+  height: calc(20vh - 50px);
+  display: grid;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  width: 20vw;
+  height: 20vh;
+  padding: 10px;
+  background-color: white;
+  list-style: none;
+  opacity: 0.75;
+}
+
+.card:hover {
+  width: 20vw;
+  height: 20vw;
+  padding: 10px;
+  background-color: white;
+  opacity: 1;
+  list-style: none;
+  cursor:  pointer;
+}
+
+.name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #000
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.address {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #000
+  margin-top: -50px;
+}
+
+
+/*
+
+
+
+#mouth_button {
+  grid-area: t;
+}
+
+.card {
+  grid-area: c;
+}
+
+
+
+
+
+
+.hi {
+  fill: #ff99d1;
+}
+
+#banner{
+  font-family:'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: #c41200;
+  grid-area: q;
+}
+ */
