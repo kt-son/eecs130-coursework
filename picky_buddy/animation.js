@@ -1,6 +1,3 @@
-
-paper.install(window);
-paper.setup('myCanvas');
 const screenW = view.size.width;
 const screenH = view.size.height;
 const frown = "M272,269.4c-1.1,0-2-0.9-2-2c0-11.5-8.8-20.5-20-20.5s-20,9-20,20.5c0,1.1-0.9,2-2,2s-2-0.9-2-2 c0-13.8,10.5-24.5,24-24.5c13.4,0,24,10.8,24,24.5C274,268.5,273.1,269.4,272,269.4z"
